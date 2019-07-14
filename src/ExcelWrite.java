@@ -10,8 +10,8 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelWrite {
 public static void main(String[] args) throws EncryptedDocumentException, FileNotFoundException, IOException {
 		
-		String path = "./data/data.xlsx";
-		Workbook wb = WorkbookFactory.create(new FileInputStream(path));
+		String path1 = "./data/data.xlsx";
+		Workbook wb = WorkbookFactory.create(new FileInputStream(path1));
 		
 		wb.getSheet("Sheet1").getRow(1).getCell(0).setCellValue("admin");
 		
